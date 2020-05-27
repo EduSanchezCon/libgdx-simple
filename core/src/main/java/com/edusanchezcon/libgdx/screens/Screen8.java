@@ -27,9 +27,9 @@ public class Screen8 implements Screen {
 	private Camera cam;
 	private Viewport viewport;
 
-	TextureAtlas atlas;
+	private TextureAtlas atlas;
 	private float stateTime;
-	Sprite sprite;
+	private Sprite sprite;
 	private Animation<TextureRegion> animation;
 
 	private Vector2 pos = new Vector2();

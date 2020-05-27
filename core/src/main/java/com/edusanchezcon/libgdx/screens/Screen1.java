@@ -12,9 +12,10 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 /** First screen of the application. Displayed after the application is created. */
 public class Screen1 implements Screen {
 
-	private SpriteBatch batch;
 	private static final float WORLD_WIDTH = 10;
 	private static final float WORLD_HEIGHT = 10;
+
+	private SpriteBatch batch;
 
 	private Camera cam;
 	private Viewport viewport;

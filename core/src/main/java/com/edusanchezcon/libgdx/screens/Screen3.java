@@ -56,7 +56,6 @@ public class Screen3 implements Screen {
 		batch.begin();
 		batch.draw(animation.getKeyFrame(stateTime), 0,0, 2, 2);
 		batch.end();
-
 	}
 
 	@Override

@@ -24,12 +24,6 @@ public class Screen5 implements Screen {
 		viewport = new ExtendViewport(WORLD_WIDTH/2, WORLD_HEIGHT/2);
 		viewport.update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
 		cam = viewport.getCamera();
-
-		shapeRenderer.setProjectionMatrix(cam.combined);
-		shapeRenderer.setColor(Color.RED);
-		shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
-		shapeRenderer.rect(2, 2, 3, 1);
-		shapeRenderer.end();
 	}
 
 	@Override
@@ -44,8 +38,8 @@ public class Screen5 implements Screen {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		shapeRenderer.setProjectionMatrix(cam.combined);
-		shapeRenderer.setColor(Color.RED);
 		shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
+		shapeRenderer.setColor(Color.RED);
 		shapeRenderer.rect(2, 2, 3, 1);
 		shapeRenderer.end();
 	}
